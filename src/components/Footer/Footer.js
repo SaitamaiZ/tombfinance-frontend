@@ -3,8 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Container, Grid, Typography, Link } from '@material-ui/core';
 import TwitterImage from '../../assets/img/twitter.svg';
 import TelegramImage from '../../assets/img/telegram.svg';
-import DiscordImage from '../../assets/img/discord.svg';
-import YoutubeImage from '../../assets/img/youtube.svg';
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -44,33 +42,22 @@ const Footer = () => {
             <Typography variant="body2" color="textSecondary" align="left">
               {'Copyright © '}
               <Link color="inherit" href="/">
-                Tomb Finance
+                FoxTomb
               </Link>{' '}
               {new Date().getFullYear()}
             </Typography>
           </Grid>
           <Grid item xs={6} style={{ textAlign: 'right' }}>
             <a
-              href="https://twitter.com/tombfinance"
+              href="https://x.com/foxtomb"
               rel="noopener noreferrer"
               target="_blank"
               className={classes.link}
             >
               <img alt="twitter" src={TwitterImage} className={classes.img} />
             </a>
-            <a href="https://t.me/tombfinance" rel="noopener noreferrer" target="_blank" className={classes.link}>
+            <a href="https://t.me" rel="noopener noreferrer" target="_blank" className={classes.link}>
               <img alt="telegram" src={TelegramImage} className={classes.img} />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCGf87DxPzLXwPrfYpXIkaLQ"
-              rel="noopener noreferrer"
-              target="_blank"
-              className={classes.link}
-            >
-              <img alt="youtube" src={YoutubeImage} className={classes.img} />
-            </a>
-            <a href="http://discord.tomb.finance/" rel="noopener noreferrer" target="_blank" className={classes.link}>
-              <img alt="discord" src={DiscordImage} className={classes.img} />
             </a>
           </Grid>
         </Grid>
